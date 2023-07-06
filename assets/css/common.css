@@ -1,0 +1,48 @@
+#logIn,
+#signIn {
+  padding: 20px 40px !important;
+}
+
+#google,
+#facebook {
+  padding: 15px 40px;
+}
+
+.modal-footer {
+  flex-direction: column;
+}
+
+.input {
+  padding: 2rem !important;
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid black;
+}
+
+.floating-label-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  .floating-label {
+    font-size: 13px;
+    color: #221818;
+    position: absolute;
+    pointer-events: none;
+    top: 11px;
+    left: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .input:focus ~ .floating-label,
+  .input:not(:focus):valid ~ .floating-label {
+    top: -15px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 11px;
+    opacity: 1;
+    color: #404040;
+  }
+}
